@@ -3,7 +3,7 @@
     "version": "1.0",
     "description": "Filter out cars you don't like",
     "permissions": ["storage", "declarativeContent", "activeTab"],
-    "options_page": "options.html",
+    "options_page": "popup.html",
     "background": {
       "scripts": ["background.js"],
       "persistent": false
