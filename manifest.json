@@ -1,0 +1,22 @@
+  {
+    "name": "Y2 Filter Extension",
+    "version": "1.0",
+    "description": "Filter out cars you don't like",
+    "permissions": ["storage", "declarativeContent", "activeTab"],
+    "options_page": "options.html",
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "page_action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.yad2.co.il/vehicles/*"],
+            "js": ["filter.js"]
+        }
+    ],
+    "manifest_version": 2
+  }
+  

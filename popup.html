@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html dir="rtl">
+  <head>
+    <style>
+      #modelsToHide {
+        height: 400px;
+        width: 250px;
+      }
+      button {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button id="toggleEnabled" style="float: left"></button>
+      <button id="updateModelsToHide">שמור</button>
+      <input type="checkbox" id="hideRows" name="hideRows" value="">
+      <label for="hideRows">הסתר שורות</label>
+    </div>
+    רשימת מודלים / יצרנים לסינון:
+    <br />
+    <textarea id="modelsToHide"></textarea>
+    <br />
+    <script src="popup.js"></script>
+  </body>
+</html>
