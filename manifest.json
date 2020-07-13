@@ -1,5 +1,5 @@
 {
-    "name": "Y2 Filter Extension",
+    "name": "Y2 Car Filter",
     "version": "1.0",
     "description": "Filter out cars you don't like",
     "permissions": ["storage", "declarativeContent", "activeTab"],
