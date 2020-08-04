@@ -1,5 +1,11 @@
 function filterFunc() {
     chrome.storage.sync.get(['modelsToHide', 'enabled', 'hideRows'], function(data) {
+        // Hide annoying elements
+        for (let selector of ['#desktop-top-banners', '.vehicle-filter-by-area']) {
+            document.querySelector(selector).style.display = 'none'
+        }
+
+        // Filter cars
         let unwantedModels = data.modelsToHide
         let hiddenAdsCount = 0
         for (let element of document.querySelectorAll('div.feed_list div.feeditem')) {
